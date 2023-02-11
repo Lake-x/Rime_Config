@@ -2149,12 +2149,12 @@ preset_keyboards:
       - {width: 2}
       - {click: BackSpace, swipe_left: Clear, swipe_up: Candidate_switch1, key_text_offset_y: 0, key_back_color: bksb, hilited_key_back_color: bksh, key_symbol_color: bkss, key_text_color: bkst, width: 13, key_text_size: 21}
       # 第四行 Yian modified
-      - {height: *VJM, click: K_number, label: '?123', composing: delimiterD, key_symbol_offset_x: 0, long_click: IME_switch1, swipe_down: IME_switch1, key_back_color: gnb, hilited_key_back_color: gnh, key_symbol_color: gns, width: 12, key_text_size: 16} #方案选择
+      - {height: *VJM, click: K_number, label: 'Num', composing: delimiterD, key_symbol_offset_x: 0, long_click: IME_switch1, swipe_down: IME_switch1, key_back_color: gnb, hilited_key_back_color: gnh, key_symbol_color: gns, width: 12, key_text_size: 16} #方案选择
       - {height: *VJM, click: K_symbol, label: '符', composing: delimiterD1, key_symbol_offset_x: 0, long_click: K_menu, key_back_color: gnb, hilited_key_back_color: gnh, key_symbol_color: gns, width: 12, key_text_size: 16} #方案选择
-      - {click: ",", label: " ，", key_symbol_offset_x: 0, long_click: "!", swipe_up: "!", key_back_color: bdb, key_text_color: bdt, key_symbol_color: bds, hilited_key_back_color: bdh, hilited_key_text_color: hbdt, width: 14, key_text_size: 16}
-      - {click: space1, key_text_size: 18, key_text_offset_x: 0, key_text_offset_y: 0, hilited_key_text_color: hkgt, key_symbol_offset_x: 0, key_symbol_offset_y: 6, long_click: Menu, swipe_left: Left, swipe_right: Right, key_back_color: kgb, key_text_color: kgt, key_symbol_color: kgs, hilited_key_back_color: kgh, width: 32}
-      # - {click: space1, long_click: VOICE_ASSIST_Ch, swipe_left: Left, swipe_right: Right, key_text_size: 13.5, width: 26, key_symbol_offset_x: 0, key_back_color: bdb, key_text_color: bdt, key_symbol_color: bds, hilited_key_back_color: bdh, hilited_key_text_color: hbdt}
-      - {click: ".", label: " 。", key_symbol_offset_x: 0, long_click: "?", swipe_up: "?", width: 14, key_back_color: bdb, key_text_color: bdt, key_symbol_color: bds, hilited_key_back_color: bdh, hilited_key_text_color: hbdt, key_text_size: 16}
+      - {click: ",", label: " ，", key_symbol_offset_x: 0, long_click: "!", swipe_up: "!", key_back_color: bdb, key_text_color: bdt, key_symbol_color: bds, hilited_key_back_color: bdh, hilited_key_text_color: hbdt, key_text_size: 16}
+      - {click: space1, key_text_size: 18, key_text_offset_x: 0, key_text_offset_y: 0, hilited_key_text_color: hkgt, key_symbol_offset_x: 0, key_symbol_offset_y: 6, long_click: Menu, swipe_left: Left, swipe_right: Right, key_back_color: kgb, key_text_color: kgt, key_symbol_color: kgs, hilited_key_back_color: kgh, width: 28}
+      - {click: ".", label: " 。", key_symbol_offset_x: 0, long_click: "?", swipe_up: "?", key_back_color: bdb, key_text_color: bdt, key_symbol_color: bds, hilited_key_back_color: bdh, hilited_key_text_color: hbdt, key_text_size: 16}
+      - {click: '/', label: "/",  key_symbol_offset_x: 0, long_click: liquid_keyboard_switch, swipe_up: liquid_keyboard_switch, width: 12, key_back_color: bdb, key_text_color: bdt, key_symbol_color: bds, hilited_key_back_color: bdh, hilited_key_text_color: hbdt, key_text_size: 16}
       - {click: Return, key_symbol_offset_x: 0, key_back_color: hcb, key_text_color: hct, hilited_key_text_color: hcht, key_symbol_color: hcs, hilited_key_back_color: hch, width: 16, key_text_size: 16}
 
 #--------笔画输入开始----------------#
@@ -2781,21 +2781,29 @@ preset_keyboards:
       - {click: "."}
       - {click: "?"}
       - {click: "!"}
-      - {click: BackSpace, swipe_left: Clear, key_back_color: bksb, hilited_key_back_color: bksh, key_symbol_color: bkss, key_text_color: bkst,hilited_key_text_color: hcht, width: 19}
       - {click: ":"}
       - {click: "/"}
+      - {click: BackSpace, swipe_left: Clear, key_back_color: bksb, hilited_key_back_color: bksh, key_symbol_color: bkss, key_text_color: bkst,hilited_key_text_color: hcht, width: 19}
       - {click: "^"}
       - {click: "*"}
-      - {click: K_symbols11, key_text_color: fyt, width: 19}
       - {click: ";"}
       - {click: '"'}
       - {click: "'"}
       - {click: "#"}
-      - {click: K_symbols12x, width: 19}
+      - {click: K_symbols11, key_text_color: fyt, width: 19}
       - {click: "{"}
       - {click: "}"}
       - {click: "_"}
       - {click: "@"}
+      - {click: "("}
+      - {click: ")"}
+      - {click: K_symbols12x, width: 19}
+      - {click: "["}
+      - {click: "]"}
+      - {ascii: "\\", click: "、"}
+      - {click: '`'}
+      - {click: '~'}
+      - {click: "$"}
       - {click: K_back, width: 19}
       - {click: K_symbols00, width: 12.5}
       - {click: K_symbols10, key_back_color: key_back_color, width: 12.5}
@@ -2806,7 +2814,7 @@ preset_keyboards:
       - {click: K_symbols60, width: 12.5}
       - {click: K_symbols0y, width: 12.5}
     name: "英文1"
-    width: 20.25
+    width: 13.5
   symbols12:
     ascii_mode: 1
     author: flypy.com
@@ -2818,62 +2826,29 @@ preset_keyboards:
     horizontal_gap: *FJL
     vertical_gap: *FJH
     keys:
-      - {click: "("}
-      - {click: ")"}
-      - {click: "["}
-      - {click: "]"}
-      - {click: BackSpace, swipe_left: Clear, key_back_color: bksb, hilited_key_back_color: bksh, key_symbol_color: bkss, key_text_color: bkst,hilited_key_text_color: hcht, width: 19}
-      - {ascii: "\\", click: "、"}
-      - {click: '`'}
-      - {click: '~'}
-      - {click: "$"}
-      - {click: K_symbols11, width: 19}
       - {click: "|"}
       - {click: "+"}
       - {click: "-"}
       - {click: "="}
-      - {click: K_symbols13x, width: 19}
       - {click: "<"}
       - {click: ">"}
+      - {click: BackSpace, swipe_left: Clear, key_back_color: bksb, hilited_key_back_color: bksh, key_symbol_color: bkss, key_text_color: bkst,hilited_key_text_color: hcht, width: 19}
       - {click: "..."}
       - {click: "&"}
-      - {click: K_back, width: 19}
-      - {click: K_symbols00, width: 12.5}
-      - {click: K_symbols10, key_back_color: key_back_color, width: 12.5}
-      - {click: K_symbols20, width: 12.5}
-      - {click: K_symbols30, width: 12.5}
-      - {click: K_symbols40, width: 12.5}
-      - {click: K_symbols50, width: 12.5}
-      - {click: K_symbols60, width: 12.5}
-      - {click: K_symbols0y, width: 12.5}
-    name: "英文2"
-    width: 20.25
-  symbols13:
-    ascii_mode: 1
-    author: flypy.com
-    key_text_offset_y: *DtextY
-    key_symbol_offset_y: *DsymY
-    key_press_offset_x: 0
-    key_press_offset_y: 8
-    key_symbol_offset_x: *DsymX
-    horizontal_gap: *FJL
-    vertical_gap: *FJH
-    keys:
       - {click: "Ⓐ"}
       - {click: "Ⓑ"}
       - {click: "Ⓒ"}
       - {click: "Ⓓ"}
-      - {click: BackSpace, swipe_left: Clear, key_back_color: bksb, hilited_key_back_color: bksh, key_symbol_color: bkss, key_text_color: bkst,hilited_key_text_color: hcht, width: 19}
+      - {click: K_symbols11, width: 19}
       - {click: "Ⓔ"}
       - {click: "Ⓕ"}
       - {click: "Ⓖ"}
       - {click: "Ⓗ"}
-      - {click: K_symbols12, width: 19}
       - {click: "Ⓘ"}
       - {click: "Ⓙ"}
+      - {click: K_symbols13x, width: 19}
       - {click: "Ⓚ"}
       - {click: "Ⓛ"}
-      - {click: K_symbols14x, width: 19}
       - {click: "Ⓜ"}
       - {click: "Ⓝ"}
       - {click: "Ⓞ"}
@@ -2887,9 +2862,9 @@ preset_keyboards:
       - {click: K_symbols50, width: 12.5}
       - {click: K_symbols60, width: 12.5}
       - {click: K_symbols0y, width: 12.5}
-    name: "英文3"
-    width: 20.25
-  symbols14:
+    name: "英文2"
+    width: 13.5
+  symbols13:
     ascii_mode: 1
     author: flypy.com
     key_text_offset_y: *DtextY
@@ -2904,16 +2879,58 @@ preset_keyboards:
       - {click: "Ⓡ"}
       - {click: "Ⓢ"}
       - {click: "Ⓣ"}
-      - {click: BackSpace, swipe_left: Clear, key_back_color: bksb, hilited_key_back_color: bksh, key_symbol_color: bkss, key_text_color: bkst,hilited_key_text_color: hcht, width: 19}
       - {click: "Ⓤ"}
       - {click: "Ⓥ"}
+      - {click: BackSpace, swipe_left: Clear, key_back_color: bksb, hilited_key_back_color: bksh, key_symbol_color: bkss, key_text_color: bkst,hilited_key_text_color: hcht, width: 19}
       - {click: "Ⓦ"}
       - {click: "Ⓧ"}
-      - {click: K_symbols13, width: 19}
       - {click: "Ⓨ"}
       - {click: "Ⓩ"}
       - {click: ""}
       - {click: ""}
+      - {click: K_symbols12, width: 19}
+      - {click: ""}
+      - {click: ""}
+      - {click: ""}
+      - {click: ""}
+      - {click: ""}
+      - {click: ""}
+      - {click: K_symbols13x, key_text_color: fyt, width: 19}
+      - {click: ""}
+      - {click: ""}
+      - {click: ""}
+      - {click: ""}
+      - {click: ""}
+      - {click: ""}
+      - {click: K_back, width: 19}
+      - {click: K_symbols00, width: 12.5}
+      - {click: K_symbols10, key_back_color: key_back_color, width: 12.5}
+      - {click: K_symbols20, width: 12.5}
+      - {click: K_symbols30, width: 12.5}
+      - {click: K_symbols40, width: 12.5}
+      - {click: K_symbols50, width: 12.5}
+      - {click: K_symbols60, width: 12.5}
+      - {click: K_symbols0y, width: 12.5}
+    name: "英文3"
+    width: 13.5
+  symbols14:
+    ascii_mode: 1
+    author: flypy.com
+    key_text_offset_y: *DtextY
+    key_symbol_offset_y: *DsymY
+    key_press_offset_x: 0
+    key_press_offset_y: 8
+    key_symbol_offset_x: *DsymX
+    horizontal_gap: *FJL
+    vertical_gap: *FJH
+    keys:
+
+      - {click: BackSpace, swipe_left: Clear, key_back_color: bksb, hilited_key_back_color: bksh, key_symbol_color: bkss, key_text_color: bkst,hilited_key_text_color: hcht, width: 19}
+
+
+      - {click: K_symbols13, width: 19}
+
+
       - {click: K_symbols14x, key_text_color: fyt, width: 19}
       - {click: ""}
       - {click: ""}
@@ -2929,7 +2946,7 @@ preset_keyboards:
       - {click: K_symbols60, width: 12.5}
       - {click: K_symbols0y, width: 12.5}
     name: "英文4"
-    width: 20.25
+    width: 13.5
   symbols21:
     ascii_mode: 0
     author: flypy.com
@@ -2945,21 +2962,29 @@ preset_keyboards:
       - {click: "。"}
       - {click: "？"}
       - {click: "！"}
-      - {click: BackSpace, swipe_left: Clear, key_back_color: bksb, hilited_key_back_color: bksh, key_symbol_color: bkss, key_text_color: bkst,hilited_key_text_color: hcht, width: 19}
       - {click: "："}
       - {click: "、"}
+      - {click: BackSpace, swipe_left: Clear, key_back_color: bksb, hilited_key_back_color: bksh, key_symbol_color: bkss, key_text_color: bkst,hilited_key_text_color: hcht, width: 19}
       - {click: "@"}
       - {click: "……"}
-      - {click: K_symbols21, key_text_color: fyt, width: 19}
       - {click: "“”{Left}"}
       - {click: "；"}
       - {click: "‘’{Left}"}
       - {click: "——"}
-      - {click: K_symbols22x, width: 19}
+      - {click: K_symbols21, key_text_color: fyt, width: 19}
       - {click: "（）{Left}"}
-      - { click: "《》{Left}"}
+      - {click: "《》{Left}"}
       - {click: "〈〉{Left}"}
       - {click: "〔〕{Left}"}
+      - {click: "［］{Left}"}
+      - {click: "【】{Left}"}
+      - {click: K_symbols22x, width: 19}
+      - {click: "「」{Left}"}
+      - {click: "『』{Left}"}
+      - {click: "+"}
+      - {click: "-"}
+      - {click: "×"}
+      - {click: "÷"}
       - {click: K_back, width: 19}
       - {click: K_symbols00, width: 12.5}
       - {click: K_symbols10, width: 12.5}
@@ -2970,7 +2995,7 @@ preset_keyboards:
       - {click: K_symbols60, width: 12.5}
       - {click: K_symbols0y, width: 12.5}
     name: "中文1"
-    width: 20.25
+    width: 13.5
   symbols22:
     ascii_mode: 0
     author: flypy.com
@@ -2982,25 +3007,33 @@ preset_keyboards:
     horizontal_gap: *FJL
     vertical_gap: *FJH
     keys:
-      - {click: "［］{Left}"}
-      - {click: "【】{Left}"}
-      - {click: "「」{Left}"}
-      - {click: "『』{Left}"}
-      - {click: BackSpace, swipe_left: Clear, key_back_color: bksb, hilited_key_back_color: bksh, key_symbol_color: bkss, key_text_color: bkst,hilited_key_text_color: hcht, width: 19}
-      - {click: "+"}
-      - {click: "-"}
-      - {click: "×"}
-      - {click: "÷"}
-      - {click: K_symbols21, width: 19}
       - {click: "="}
       - {click: "#"}
       - {click: "￥"}
       - {click: "%"}
-      - {click: K_symbols22x, key_text_color: fyt, width: 19}
       - {click: "ˇ"}
       - {click: "*"}
+      - {click: BackSpace, swipe_left: Clear, key_back_color: bksb, hilited_key_back_color: bksh, key_symbol_color: bkss, key_text_color: bkst,hilited_key_text_color: hcht, width: 19}
       - {click: "&"}
       - {click: "～"}
+      - {click: ""}
+      - {click: ""}
+      - {click: ""}
+      - {click: ""}
+      - {click: K_symbols21, width: 19}
+      - {click: ""}
+      - {click: ""}
+      - {click: ""}
+      - {click: ""}
+      - {click: ""}
+      - {click: ""}
+      - {click: K_symbols22x, key_text_color: fyt, width: 19}
+      - {click: ""}
+      - {click: ""}
+      - {click: ""}
+      - {click: ""}
+      - {click: ""}
+      - {click: ""}
       - {click: K_back, width: 19}
       - {click: K_symbols00, width: 12.5}
       - {click: K_symbols10, width: 12.5}
@@ -3011,7 +3044,7 @@ preset_keyboards:
       - {click: K_symbols60, width: 12.5}
       - {click: K_symbols0y, width: 12.5}
     name: "中文2"
-    width: 20.25
+    width: 13.5
   symbols31:
     ascii_mode: 1
     author: flypy.com
