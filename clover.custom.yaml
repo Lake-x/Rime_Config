@@ -1,0 +1,5 @@
+patch:
+    dependencies:
+    - emoji
+    
+    reverse_lookup:

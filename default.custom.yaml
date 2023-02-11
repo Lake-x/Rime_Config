@@ -1,0 +1,30 @@
+customization:
+  distribution_code_name: Weasel
+  distribution_version: 0.14.3
+  generator: "Rime::SwitcherSettings"
+  modified_time: "Sat Oct 31 18:18:48 2020"
+  rime_version: 1.5.3
+patch:
+  schema_list:
+    - {schema: wubi86_jidian}
+    - {schema: clover_jiugong}
+
+  ascii_composer:
+    good_old_caps_lock: true
+    switch_key:
+      Caps_Lock: clear
+      Control_L: noop
+      Control_R: noop
+      Eisu_toggle: clear
+      Shift_L: commit_code
+      Shift_R: commit_code
+  # 以方括号 “[" 和 “]” 来换页
+  key_binder/bindings:
+    - when: paging
+      accept: bracketleft
+      send: Page_Up
+    - when: has_menu
+      accept: bracketright
+      send: Page_Down
+  menu:
+    page_size: 8
